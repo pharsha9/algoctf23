@@ -1,0 +1,22 @@
+{
+    "name": "Level6",
+    "methods": [
+        {
+            "name": "sum",
+            "args": [
+                {
+                    "type": "uint64",
+                    "name": "one"
+                },
+                {
+                    "type": "uint64",
+                    "name": "two"
+                }
+            ],
+            "returns": {
+                "type": "uint64"
+            }
+        }
+    ],
+    "networks": {}
+}

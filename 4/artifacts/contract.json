@@ -1,0 +1,13 @@
+{
+    "name": "Level4",
+    "methods": [
+        {
+            "name": "set_access",
+            "args": [],
+            "returns": {
+                "type": "string"
+            }
+        }
+    ],
+    "networks": {}
+}

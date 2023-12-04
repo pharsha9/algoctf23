@@ -1,0 +1,67 @@
+#pragma version 8
+intcblock 0 1
+bytecblock 0x
+txn NumAppArgs
+intc_0 // 0
+==
+bnz main_l4
+txna ApplicationArgs 0
+pushbytes 0xeab26f58 // "set_access()string"
+==
+bnz main_l3
+err
+main_l3:
+txn OnCompletion
+intc_0 // NoOp
+==
+txn ApplicationID
+intc_0 // 0
+!=
+&&
+assert
+callsub setaccesscaster_1
+intc_1 // 1
+return
+main_l4:
+txn OnCompletion
+intc_0 // NoOp
+==
+bnz main_l6
+err
+main_l6:
+txn ApplicationID
+intc_0 // 0
+==
+assert
+intc_1 // 1
+return
+
+// set_access
+setaccess_0:
+proto 0 1
+bytec_0 // ""
+pushbytes 0x616363657373 // "access"
+txn Sender
+app_global_put
+pushbytes 0x536574 // "Set"
+frame_bury 0
+frame_dig 0
+len
+itob
+extract 6 0
+frame_dig 0
+concat
+frame_bury 0
+retsub
+
+// set_access_caster
+setaccesscaster_1:
+proto 0 0
+bytec_0 // ""
+callsub setaccess_0
+frame_bury 0
+pushbytes 0x151f7c75 // 0x151f7c75
+frame_dig 0
+concat
+log
+retsub

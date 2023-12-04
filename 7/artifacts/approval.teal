@@ -1,0 +1,76 @@
+#pragma version 8
+intcblock 0 1
+bytecblock 0x
+txn NumAppArgs
+intc_0 // 0
+==
+bnz main_l4
+txna ApplicationArgs 0
+pushbytes 0x48470617 // "complete()string"
+==
+bnz main_l3
+err
+main_l3:
+txn OnCompletion
+intc_0 // NoOp
+==
+txn ApplicationID
+intc_0 // 0
+!=
+&&
+assert
+callsub completecaster_1
+intc_1 // 1
+return
+main_l4:
+txn OnCompletion
+intc_0 // NoOp
+==
+bnz main_l6
+err
+main_l6:
+txn ApplicationID
+intc_0 // 0
+==
+assert
+intc_1 // 1
+return
+
+// complete
+complete_0:
+proto 0 1
+bytec_0 // ""
+itxn_begin
+pushbytes 0x73bc6501 // "authorize(address)void"
+itxn_field ApplicationArgs
+txn Sender
+itxn_field ApplicationArgs
+pushint 6 // appl
+itxn_field TypeEnum
+pushint 487251193 // 487251193
+itxn_field ApplicationID
+intc_0 // NoOp
+itxn_field OnCompletion
+itxn_submit
+pushbytes 0x636f6d706c65746564 // "completed"
+frame_bury 0
+frame_dig 0
+len
+itob
+extract 6 0
+frame_dig 0
+concat
+frame_bury 0
+retsub
+
+// complete_caster
+completecaster_1:
+proto 0 0
+bytec_0 // ""
+callsub complete_0
+frame_bury 0
+pushbytes 0x151f7c75 // 0x151f7c75
+frame_dig 0
+concat
+log
+retsub

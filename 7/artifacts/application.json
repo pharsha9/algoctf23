@@ -1,0 +1,49 @@
+{
+    "hints": {
+        "complete()string": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        }
+    },
+    "source": {
+        "approval": "I3ByYWdtYSB2ZXJzaW9uIDgKaW50Y2Jsb2NrIDAgMQpieXRlY2Jsb2NrIDB4CnR4biBOdW1BcHBBcmdzCmludGNfMCAvLyAwCj09CmJueiBtYWluX2w0CnR4bmEgQXBwbGljYXRpb25BcmdzIDAKcHVzaGJ5dGVzIDB4NDg0NzA2MTcgLy8gImNvbXBsZXRlKClzdHJpbmciCj09CmJueiBtYWluX2wzCmVycgptYWluX2wzOgp0eG4gT25Db21wbGV0aW9uCmludGNfMCAvLyBOb09wCj09CnR4biBBcHBsaWNhdGlvbklECmludGNfMCAvLyAwCiE9CiYmCmFzc2VydApjYWxsc3ViIGNvbXBsZXRlY2FzdGVyXzEKaW50Y18xIC8vIDEKcmV0dXJuCm1haW5fbDQ6CnR4biBPbkNvbXBsZXRpb24KaW50Y18wIC8vIE5vT3AKPT0KYm56IG1haW5fbDYKZXJyCm1haW5fbDY6CnR4biBBcHBsaWNhdGlvbklECmludGNfMCAvLyAwCj09CmFzc2VydAppbnRjXzEgLy8gMQpyZXR1cm4KCi8vIGNvbXBsZXRlCmNvbXBsZXRlXzA6CnByb3RvIDAgMQpieXRlY18wIC8vICIiCml0eG5fYmVnaW4KcHVzaGJ5dGVzIDB4NzNiYzY1MDEgLy8gImF1dGhvcml6ZShhZGRyZXNzKXZvaWQiCml0eG5fZmllbGQgQXBwbGljYXRpb25BcmdzCnR4biBTZW5kZXIKaXR4bl9maWVsZCBBcHBsaWNhdGlvbkFyZ3MKcHVzaGludCA2IC8vIGFwcGwKaXR4bl9maWVsZCBUeXBlRW51bQpwdXNoaW50IDQ4NzI1MTE5MyAvLyA0ODcyNTExOTMKaXR4bl9maWVsZCBBcHBsaWNhdGlvbklECmludGNfMCAvLyBOb09wCml0eG5fZmllbGQgT25Db21wbGV0aW9uCml0eG5fc3VibWl0CnB1c2hieXRlcyAweDYzNmY2ZDcwNmM2NTc0NjU2NCAvLyAiY29tcGxldGVkIgpmcmFtZV9idXJ5IDAKZnJhbWVfZGlnIDAKbGVuCml0b2IKZXh0cmFjdCA2IDAKZnJhbWVfZGlnIDAKY29uY2F0CmZyYW1lX2J1cnkgMApyZXRzdWIKCi8vIGNvbXBsZXRlX2Nhc3Rlcgpjb21wbGV0ZWNhc3Rlcl8xOgpwcm90byAwIDAKYnl0ZWNfMCAvLyAiIgpjYWxsc3ViIGNvbXBsZXRlXzAKZnJhbWVfYnVyeSAwCnB1c2hieXRlcyAweDE1MWY3Yzc1IC8vIDB4MTUxZjdjNzUKZnJhbWVfZGlnIDAKY29uY2F0CmxvZwpyZXRzdWI=",
+        "clear": "I3ByYWdtYSB2ZXJzaW9uIDgKcHVzaGludCAwIC8vIDAKcmV0dXJu"
+    },
+    "state": {
+        "global": {
+            "num_byte_slices": 0,
+            "num_uints": 0
+        },
+        "local": {
+            "num_byte_slices": 0,
+            "num_uints": 0
+        }
+    },
+    "schema": {
+        "global": {
+            "declared": {},
+            "reserved": {}
+        },
+        "local": {
+            "declared": {},
+            "reserved": {}
+        }
+    },
+    "contract": {
+        "name": "Level7",
+        "methods": [
+            {
+                "name": "complete",
+                "args": [],
+                "returns": {
+                    "type": "string"
+                }
+            }
+        ],
+        "networks": {}
+    },
+    "bare_call_config": {
+        "no_op": "CREATE"
+    }
+}

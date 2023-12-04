@@ -1,0 +1,13 @@
+{
+    "name": "Level7",
+    "methods": [
+        {
+            "name": "complete",
+            "args": [],
+            "returns": {
+                "type": "string"
+            }
+        }
+    ],
+    "networks": {}
+}
