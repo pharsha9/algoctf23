@@ -26,3 +26,12 @@ For Beaker documentation, go to https://algorand-devrel.github.io/beaker/html/in
 ### Run Level 0 Challenge
 1. `poetry run python3 level0.py`
 2. Confirm your account is now on the [Leaderboard]()
+
+
+
+
+
+
+https://github.com/algorand-devrel/py-ctf-solver
+
+https://nullun.github.io/ctf-algo-leaderboard/
